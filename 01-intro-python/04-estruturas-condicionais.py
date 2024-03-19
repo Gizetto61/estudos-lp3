@@ -43,3 +43,33 @@ if email == 'adimin@email.com' and senha == '123':
     print('Liberado')
 else:
     print('Erro')
+
+    
+
+
+# Operador Ternário
+idade = 17
+# maior ou menor
+status = ''
+
+status = 'maior' if idade >= 18 else 'menor'
+
+# match
+dia = 3
+match dia:
+    case 1:
+        print('Domingo')
+    case 2:
+        print('Segunda')
+    case 3:
+        print('Terça')
+    case _:
+        print('Dia Inválido')
+
+match dia:
+    case 1 | 7:
+        print('Fim de Semana')
+    case 2 | 3 | 4 | 5 | 6:
+        print('Dia Útil')
+    case _:
+        print('Dia Inválido')
